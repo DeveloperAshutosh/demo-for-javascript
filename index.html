@@ -1,28 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>CSS Practice Mockup</title>
+<head>
+  <meta charset="utf-8">
+  <title>Intro to JS</title>
+  <meta name="description" content="A basic introduction to the world of JavaScript.">
+  <meta name="author" content="TECHCareers">
 
-    <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage. -->
-    <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <!-- For modern responsive web development: -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Meta Data: -->
-    <meta name="description" content="A website without a real purpose, to demonstrate some CSS design.">
-    <meta name="author" content="James Grieve">
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-
-    <!-- Style(s): -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <!-- Script(s): -->
-    <!-- defer attribute will cause this script to wait until the body is loaded before executing (important for DOM / element manipulation by scripts) -->
+  <!-- Keep the script in the head if possible. -->
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TECHCareers Image Gallery</h1>
+            <div>
+                <label for="search">Search:</label>
+                <input id="search" type="text">
+                <a id="clear" href="#">X</a>
+            </div>
+        </header>
+        <main>
+            <img src="img/flower.jpg" alt="A abeautifull flower pot." tags="pot #flower #nature">
+            <img src="img/kitten.jpg" alt="A very cute kitten." tags="#kitten #cute #cutness">
+            <img src="img/land.jpg" alt="A beautifull view , natural beauty." tags="#nature #trees #grass">
+            <img src="img/mountain.jpg" alt="An amazing view of mountains." tags="#mountains #nature #peace">
+            <img src="img/puppy.jpg" alt="A puppu flonting his cuteness" tags="#puppy #cute #naughty">
+            <img src="img/sunset.jpg" alt="A view of sunset , may be in rockies." tags="#sunset #view #peacefull">
+            <img src="img/view.jpg" alt="A gorgs scenetic pic of flowers and road." tags="#flowers #road">
+        </main>
+    </div>
     <script src="js/scripts.js" defer></script>
-  </head>
-  <body>
-        <a href="#" id="link1" class="link">Click Me For Console Fun!</a>
-  </body>
-</html>
+</body>
+
+</html> 
